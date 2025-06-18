@@ -1,61 +1,178 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+☕ Aplikasi Presensi Karyawan - Omah Kopi Mrisen
+Sebuah aplikasi web modern untuk mengelola sistem kehadiran karyawan secara digital menggunakan teknologi QR Code.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+📋 Sekilas Proyek
+Status Proyek
 
-## About Laravel
+Teknologi Utama
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Database
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+✅ Selesai
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravel 10, Tailwind CSS
 
-## Learning Laravel
+MySQL
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+✨ Fitur Utama
+Manajemen Karyawan (CRUD): Tambah, lihat, ubah, dan hapus data karyawan dengan mudah.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Generator QR Code: Membuat QR Code unik secara otomatis untuk setiap karyawan sebagai identitas digital.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Presensi via QR Code: Halaman pemindaian interaktif untuk proses absensi masuk (clock-in) dan pulang (clock-out) yang cepat dan akurat.
 
-## Laravel Sponsors
+Dashboard Admin: Tampilan ringkasan aktivitas presensi harian secara real-time, memberikan gambaran cepat kondisi operasional.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Administrasi Kehadiran: Fitur fleksibel bagi admin untuk mencatat status khusus seperti izin, sakit, atau alpha.
 
-### Premium Partners
+Sistem Pelaporan: Laporan kehadiran harian dan bulanan yang dinamis dengan fitur filter berdasarkan periode dan individu.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Autentikasi Aman: Sistem login yang aman untuk admin menggunakan Laravel Breeze.
 
-## Contributing
+Desain Responsif: Tampilan yang dapat diakses dengan baik di berbagai ukuran perangkat, dari desktop hingga mobile.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+🖼️ Tampilan Aplikasi
+Anda bisa menambahkan screenshot aplikasi Anda di sini. Unggah gambar ke GitHub atau Imgur, lalu ganti link di bawah.
 
-## Code of Conduct
+🛠️ Teknologi yang Digunakan
+Kategori
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Teknologi
 
-## Security Vulnerabilities
+Backend
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Laravel 10, PHP 8.1
 
-## License
+Frontend
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Tailwind CSS, Blade, JavaScript (ES6)
+
+Database
+
+MySQL
+
+Dependensi
+
+simplesoftwareio/simple-qrcode, html5-qrcode
+
+🚀 Cara Instalasi di Lokal (Bahasa Indonesia)
+Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer lokal Anda.
+
+Hal yang harus dipersiapkan:
+Git
+
+Composer
+
+PHP v8.1 atau lebih baru
+
+Web Server (XAMPP, Laragon, dll.)
+
+Langkah-langkah Instalasi:
+Clone repositori ini
+Buka terminal atau CMD, lalu jalankan perintah:
+
+git clone https://github.com/tugelanboto19/aplikasi-presensi-omah-kopi.git
+
+Masuk ke folder proyek
+
+cd aplikasi-presensi-omah-kopi
+
+Install semua package PHP
+
+composer install
+
+Salin file .env
+
+# Untuk Windows
+copy .env.example .env
+
+# Untuk MacOS / Linux
+cp .env.example .env
+
+Konfigurasi Database
+
+Buka file .env yang baru saja Anda buat.
+
+Sesuaikan bagian koneksi database sesuai dengan pengaturan Anda:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_absensi_omahkopi  // Ganti dengan nama database Anda
+DB_USERNAME=root                // Ganti dengan username DB Anda
+DB_PASSWORD=                    // Ganti dengan password DB Anda
+
+Buat database baru di phpMyAdmin (atau sejenisnya) dengan nama yang sama seperti yang Anda tulis di DB_DATABASE.
+
+Jalankan Perintah Artisan
+Jalankan perintah ini satu per satu:
+
+# Membuat application key
+php artisan key:generate
+
+# Menjalankan migrasi untuk membuat struktur tabel
+php artisan migrate
+
+# Menjalankan server pengembangan
+php artisan serve
+
+Catatan: Proyek ini belum memiliki seeder (data awal). Anda perlu mendaftarkan akun admin dan karyawan baru secara manual setelah instalasi.
+
+Selesai!
+Buka browser Anda dan akses alamat: http://localhost:8000/. Anda bisa mulai dengan mendaftarkan akun admin baru dari halaman registrasi.
+
+🇬🇧 How to Install (English)
+Follow these steps to get a local copy up and running.
+
+Prerequisites:
+Git
+
+Composer
+
+PHP v8.1+
+
+A web server environment (XAMPP, Laragon, etc.)
+
+Installation Steps:
+Clone the repository
+
+git clone https://github.com/tugelanboto19/aplikasi-presensi-omah-kopi.git
+
+Navigate to the project directory
+
+cd aplikasi-presensi-omah-kopi
+
+Install PHP dependencies
+
+composer install
+
+Create your environment file
+
+# For Windows
+copy .env.example .env
+
+# For MacOS / Linux
+cp .env.example .env
+
+Configure the database
+
+Open the .env file.
+
+Update the database connection details to match your local setup (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
+
+Create a new database with the name you specified in DB_DATABASE.
+
+Run Artisan Commands
+Execute these commands sequentially:
+
+php artisan key:generate
+php artisan migrate
+php artisan serve
+
+Note: This project does not yet have a database seeder. You will need to register a new admin account and add employee data manually after installation.
+
+Done!
+Open your browser and go to http://localhost:8000/. You can start by registering a new admin account.
+
+📜 Lisensi
+Proyek ini menggunakan lisensi MIT license.
